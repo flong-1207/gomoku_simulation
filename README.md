@@ -1,1 +1,1 @@
-# gomoku_simulation
+CỜ CARO: KHI "NHÂN PHẨM" ĐẦU HÀNG TRƯỚC OOP VÀ TOÁN HỌC
