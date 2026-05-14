@@ -14,7 +14,7 @@ Luật chơi mô phỏng
 
 - Điều kiện thắng: Bên nào tạo được 5 hàng dọc, 5 hàng ngang hoặc 5 hàng chéo trước sẽ giành chiến thắng.
 
-# Ý tưởng chính và Thiết lập AI
+# Ý tưởng chính và thiết lập AI
 
 Thông thường, người chơi có ba xu hướng chính: Tấn công mạnh, phòng thủ chắc hoặc cân bằng cả hai. Chúng ta thử đặt ra bài toán rằng: 
 
