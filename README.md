@@ -32,29 +32,29 @@ Chính vì vậy, mô hình áp dụng các kỹ thuật tối ưu hóa để AI
 
 Mô hình được cấu trúc theo tinh thần đóng gói (Encapsulation) với các thành phần chính:
 
-_class Board_ (Quản lý toàn bộ logic và trạng thái của bàn cờ)
+**_class Board_** (Quản lý toàn bộ logic và trạng thái của bàn cờ)
 
 => Dữ liệu: Bàn cờ được cấp phát động _char BanCo_. Các ô chứa giá trị _EMPTY_, _PLAYER_X_, hoặc _PLAYER_O_.
   
 => Trách nhiệm: Đặt quân, kiểm tra thắng thua, hoàn tác nước đi và tính điểm thế cờ. Toàn bộ logic bàn cờ nằm gọn trong class này.
 
-=> Hàm _checkWin()_
+=> **Hàm _checkWin()_**
 
 + Kiểm tra 4 hướng: ngang, dọc, chéo chính, chéo phụ.
 
 + Tối ưu: Chỉ kiểm tra quanh nước đi vừa đánh thay vì duyệt toàn bộ bàn cờ để giảm thời gian xử lý.
 
-=> Hàm _countPatterns()_: Lượng giá các chuỗi 2, 3, 4 quân và số đầu hở để đưa ra nước đi mạnh nhất.
+=> **Hàm _countPatterns()_**: Lượng giá các chuỗi 2, 3, 4 quân và số đầu hở để đưa ra nước đi mạnh nhất.
 
-_class AIPlayer_ (Đại diện cho "bộ não" của AI với các chỉ số chiến thuật)
+**_class AIPlayer_** (Đại diện cho "bộ não" của AI với các chỉ số chiến thuật)
 
-=> Hàm _player(PLAYER, HSatk, HSdef)_, trong đó:
+=> **Hàm _player(PLAYER, HSatk, HSdef)_**, trong đó:
 
 + Hệ số Tấn công (HSAtk): Đại diện cho phong cách chơi "khô máu", ưu tiên tạo chuỗi 3, 4 để kết thúc trận thắng 1 cách nhanh chóng.
 
 + Hệ số Phòng thủ (HSDef): Đại diện cho phong cách "xe buýt 2 tầng", ưu tiên chặn đứng mưu đồ của đối phương ngay từ khi mới có 2 quân liên tiếp.
 
-=> Hàm _evaluate()_ (Đây là "bộ não" lượng giá thế trận)
+=> **Hàm _evaluate()_** (Đây là "bộ não" lượng giá thế trận)
 
 + Tính toán điểm số dựa trên các mẫu hình (patterns)
 
