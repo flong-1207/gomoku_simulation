@@ -1,6 +1,6 @@
 # 🎮 Giới thiệu
 
-Chúng ta sẽ đến với một "huyền thoại học đường": Cờ Caro.
+Chúng ta sẽ đến với một trong những "huyền thoại học đường": Cờ Caro.
 
 Mô hình trên có sử dụng OOP (lập trình hướng đối tượng) kết hợp với thuật toán Minimax và cắt tỉa Alpha-Beta để chứng minh rằng:
 
